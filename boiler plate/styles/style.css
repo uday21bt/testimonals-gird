@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  margin-top: 2rem;
+  margin-top: 8rem;
   gap: 3rem;
   background-color: var(--clr-light-grayish-blue);
 
@@ -86,9 +86,9 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  margin-top:20px;
-  margin: 12px;
+  gap: 3rem;
+  margin-top:2px;
+  margin: 15px;
 
 }
 .author-name-image-contaimer{
@@ -252,6 +252,7 @@ color: var();
       
   .card-container{
 
+    width: 85%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr) ;
   }
