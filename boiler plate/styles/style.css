@@ -16,9 +16,9 @@ html {
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  margin-top: 4rem;
-  gap: 5rem;
-  background-color: var(--clr--light-grayish-blue);
+  margin-top: 2rem;
+  gap: 3rem;
+  background-color: var(--clr-light-grayish-blue);
 
 }
 
@@ -28,7 +28,7 @@ body {
 --clr-blackish-blue: hsl(219, 29%, 14%);
 --clr-White: hsl(0, 0%, 100%);
 --clr-light-gray: hsl(0, 0%, 81%);
---clr--light-grayish-blue: hsl(210, 46%, 95%);
+--clr-light-grayish-blue: hsl(210, 46%, 95%);
 --radius:12px;
 }
 /* global css */
@@ -86,8 +86,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 20px;
+  gap: 2rem;
+  margin-top:20px;
   margin: 12px;
 
 }
@@ -141,14 +141,13 @@ img{
   font-size: 25px;
   line-height: 28px;
   color: var(--clr-White);
+ 
     
 }
 
 .testimonial-description{
    
    font-size: 16px;
-  
-   opacity: 70%;
    line-height: 25px;
    color: var(--clr-light-gray);
    
@@ -216,6 +215,27 @@ color: var();
    
  }
 
+ .author-3{
+    color: var(--clr-blackish-blue);
+    opacity: 70%;
+ }
+
+ .author-5{
+   color: var(--clr-grayish-blue);
+   opacity: 60%;
+ }
+
+
+ .testimonial-title-5{
+    
+    color: var(--clr-blackish-blue);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    opacity: 70%;
+
+ }
+
 @media screen and (min-width: 576px) {
 }
 
@@ -228,9 +248,7 @@ color: var();
 
 @media (min-width: 991px) {
 
-  .body{
-    background-image: url('/images/bg-pattern-quotation.svg');
-  }
+  
       
   .card-container{
 
