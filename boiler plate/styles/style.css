@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin-top: 4rem;
+  gap: 5rem;
+  background-color: var(--clr--light-grayish-blue);
+
+}
+
+:root{
+--clr-moderate-violet: hsl(263, 55%, 52%);
+--clr-grayish-blue: hsl(217, 19%, 35%);
+--clr-blackish-blue: hsl(219, 29%, 14%);
+--clr-White: hsl(0, 0%, 100%);
+--clr-light-gray: hsl(0, 0%, 81%);
+--clr--light-grayish-blue: hsl(210, 46%, 95%);
+--radius:12px;
+}
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+
+.card{
+
+ 
+   width: 28rem;
+   padding: 2.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 1rem;
+   border-radius: var(--radius);
+   
+
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 20px;
+  margin: 12px;
+
+}
+.author-name-image-contaimer{
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+.author-name-image-container{
+  display: flex;
+}
+.author-title-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: px;
+  margin-left: 18px;
+  margin-right: 100px;
+}
+
+.testimonial-title-3{
+    
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 28px;
+  opacity: 70%;
+}
+
+
+
+img{
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-moderate-violet)
+  
+}
+
+.author{
+  color: var(--clr-White);
+  font-weight: 500;
+
+}
+.site{
+  opacity: 70%;
+}
+
+.testimonial-title{
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 28px;
+  color: var(--clr-White);
+    
+}
+
+.testimonial-description{
+   
+   font-size: 16px;
+   font-weight: ;
+   opacity: 70%;
+   line-height: 25px;
+   color: var(--clr-light-gray);
+   
+}
+
+.testimonial-description-4{
+    
+  font-size: 16px;
+   font-weight: ;
+   opacity: 70%;
+   line-height: 25px;
+   color: var(--clr-White);
+   opacity: 70%;
+   
+}
+.card-one{
+  background-color: var(--clr-moderate-violet);
+}
+.card-two{
+   background-color: var(--clr-grayish-blue);
+}
+
+.card-three{
+  background-color: var(--clr-White);
+}
+
+.card-four{
+  background-color: var(--clr-blackish-blue);
+}
+.card-five{
+  background-color: var(--clr-White);
+}
+.testimonial-description-2{
+font-size: 16px;
+font-weight: ;
+opacity: 70%;
+line-height: 25px;
+color: var(--clr-light-gray);
+}
+
+.testimonial-description-3{
+font-size: 16px;
+font-weight: ;
+opacity:70%;
+line-height: 25px;
+color: var();
+}
+
+
+.author.picture{
+     
+   margin-right: -3px;
+
+}
+ body{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+ }
+
+ .card-container{
+     display: flex;
+   display: grid;
+   gap:1rem;
+   
+ }
+
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 769px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+
+  .body{
+    background-image: url('/images/bg-pattern-quotation.svg');
+  }
+      
+  .card-container{
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+  }
+   
+  .card-one{
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .card-two{
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+  }
+
+  .card-three{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .card-four{
+    grid-column: 2/4;
+    grid-row: 2/3;
+
+  } 
+
+  .card-five{
+
+    grid-column: 4/5;
+    grid-row: 1/3;
+
+  }
+
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
+}
